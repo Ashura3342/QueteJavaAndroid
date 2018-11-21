@@ -53,14 +53,15 @@ public class MainActivity extends AppCompatActivity {
         return horizontal;
     }
 
+
     private void addTextViewWelcome(LinearLayout layout) {
         int dp10 = convertDpToPixel(10);
         int dp5 = convertDpToPixel(5);
 
         TextView txWelcome = new TextView(this);
         txWelcome.setText(R.string.welcome_msg);
-        txWelcome.setBackgroundColor(getColor(R.color.welcomeColor));
-        txWelcome.setTextColor(getColor(R.color.welcomeTextColor));
+        txWelcome.setBackgroundColor(getResources().getColor(R.color.welcomeColor));
+        txWelcome.setTextColor(getResources().getColor(R.color.welcomeTextColor));
         txWelcome.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
         txWelcome.setPadding(dp10, dp5, dp10, dp5);
         LinearLayout.LayoutParams layoutTxWelcome = new LinearLayout.LayoutParams(
